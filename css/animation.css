@@ -1,0 +1,85 @@
+/* SNAIL SLAIN */
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 600px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-48%);
+}
+
+.mono {
+	font-family: 'Roboto Slab', serif;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* Animation Keyframes */
+
+@keyframes s_move {
+	0% { top: 0px; color: black; opacity: 0; }
+	50% { top: -150px; color: red; }
+	100% { top: -150px; color: red; opacity: 100;}
+}
+
+.s {
+	position: relative;
+	animation: s_move 2s alternate cubic-bezier(1,0,0,1);
+	animation-fill-mode: forwards;
+}
+
+@keyframes n_move {
+	0% { top: 0px; color: black; left: 0px; opacity: 0;}
+	50% { top: -150px; color: red; }
+	100% { top: -150px; color: red; left: 200px; opacity: 100; }
+}
+
+.n {
+	position: relative;
+	animation: n_move 4s alternate cubic-bezier(1,0,0,1);
+	animation-fill-mode: forwards;
+}
+
+@keyframes a_move {
+	0% { top: 0px; color: black; opacity: 0; }
+	50% { top: -150px; color: red; }
+	100% { top: -150px; color: red; opacity: 100;}
+}
+
+.a {
+	position: relative;
+	animation: a_move 4s alternate cubic-bezier(1,0,0,1);
+	animation-fill-mode: forwards;
+}
+
+@keyframes i_move {
+	0% { top: 0px; color: black; opacity: 0;}
+	50% { top: -150px; color: red; }
+	100% { top: -150px; color: red; opacity: 100;}
+}
+
+.i {
+	position: relative;
+	animation: i_move 5s alternate cubic-bezier(1,0,0,1);
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes l_move {
+	0% { top: 0px; color: black; right: 0px; opacity: 0;}
+	50% { top: -150px; color: red; }
+	100% { top: -150px; color: red; right: 180px; opacity: 100;}
+}
+
+.l {
+	position: relative;
+	animation: l_move 3s  alternate cubic-bezier(1,0,0,1);
+	animation-fill-mode: forwards;
+}
